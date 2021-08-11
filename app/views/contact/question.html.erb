@@ -1,0 +1,27 @@
+<h1> Ask a Question! </h1>
+<%= form_with url: contact_question_path do |form| %> 
+  <div class="form-row">
+
+    <div class="col">
+          <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">Email Address</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+  </div>
+  <div class="form-group">
+    <label for="inputSubject">Subject</label>
+    <input type="text" class="form-control" id="inputSubject" placeholder="therapy scheduling, hours of operation, etc.">
+  </div>
+  <div class="form-group">
+    <label for="inputTextArea">Let us know what you are curious about!</label>
+    <textarea class="form-control" id="inputTextArea" rows="5"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+<% end %>
